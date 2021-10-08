@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity B is
+	 port(
+		 a, b : in bit;
+		 x : buffer bit;
+		 saida : out bit
+	     );
+end B;
+
+architecture B of B is
+begin
+
+	x <=NOT (a AND b);
+	
+	saida <= NOT x;
+
+end B;
