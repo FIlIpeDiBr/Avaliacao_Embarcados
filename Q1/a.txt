@@ -1,0 +1,17 @@
+entity A is
+	 port(
+		 a : in bit;
+		 x : out bit
+	     );
+end A;
+
+architecture A of A is
+begin
+
+	a <= NOT a;
+	
+	x <= a;
+	
+	x <=NOT x;
+
+end A;

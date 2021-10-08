@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity D is
+	 port(
+		 a, b : in bit;
+		 x : buffer bit;
+		 e : out bit
+	     );
+end D;
+
+architecture D of D is
+begin
+
+	x <= a AND b;
+	
+	e <= NOT x;
+
+end D;
