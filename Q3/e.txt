@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+
+	typedef enum { false, true } bool;
+
+	bool a, b, x, out;
+
+	scanf_s("¨%d %d", &a, &b);			//entrada
+
+	if (a == 0 || b == 0)	x = 0;
+	else					x = 1;
+
+	out = !x;
+
+	printf("%d", out);					//saida
+}
