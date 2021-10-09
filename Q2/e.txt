@@ -7,11 +7,11 @@ let _out :bool;             //saida
 a=false;                    //simula a entrada de dados
 b=false;
 
-if a||b==false{
-    x=false;
+if a|b==true{
+    x=true;
 }
 else{
-    x=true;
+    x=false;
 }
 
 _out= !x;
